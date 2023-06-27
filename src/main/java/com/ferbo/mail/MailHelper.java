@@ -27,7 +27,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.ferbo.mail.beans.Adjunto;
 import com.ferbo.mail.beans.Correo;
-import com.ferbo.tools.DataSourceManager;
+import com.ferbo.tools.JndiManager;
 import com.ferbo.tools.MailException;
 import com.ferbo.tools.SmtpAuthenticator;
 
@@ -48,13 +48,13 @@ public class MailHelper {
 	private Transport transport = null;
 	private Session session = null;
 	private List<Message> messageList = null;
-	private DataSourceManager dsManager = null;
+	private JndiManager dsManager = null;
     String      replyToName = null;
     String      replyToMail = null;
 	Properties serverProperties = null;
 	
 	public MailHelper() {
-		this.dsManager = new DataSourceManager();
+		this.dsManager = new JndiManager();
 		this.newMessage();
 	}
 	
@@ -66,7 +66,7 @@ public class MailHelper {
         SmtpAuthenticator authenticator = null;
         
         try {
-        	this.dsManager = new DataSourceManager();
+        	this.dsManager = new JndiManager();
             serverProperties = this.dsManager.getServerProperties(jndiName);
             user = serverProperties.getProperty("mail.smtp.user");
             password = serverProperties.getProperty("mail.smtp.password");
@@ -89,7 +89,7 @@ public class MailHelper {
 	
 	public MailHelper(Session session) {
 	    this.newMessage();
-	    this.dsManager = new DataSourceManager();
+	    this.dsManager = new JndiManager();
         this.session = session;
         messageList = new ArrayList<Message>();
 	}

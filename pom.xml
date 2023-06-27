@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ferbo</groupId>
 	<artifactId>gestion-mail</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>Mail</name>
 	<description>Cliente de correo</description>
 	<packaging>jar</packaging>
@@ -22,6 +22,7 @@
 			<groupId>com.sun.mail</groupId>
 			<artifactId>javax.mail</artifactId>
 			<version>1.6.2</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<build>

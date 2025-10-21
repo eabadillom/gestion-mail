@@ -28,6 +28,7 @@ hs_err_pid*
 .tern-project
 .settings/
 .project
+.vscode/
 
 /.apt_generated/
 /.apt_generated_tests/

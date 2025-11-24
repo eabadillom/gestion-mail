@@ -8,7 +8,6 @@ public class Correo {
 		this.mail = mail;
 		this.nombreBuzon = nombreBuzon;
 	}
-	
 	public String getMail() {
 		return mail;
 	}

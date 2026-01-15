@@ -1,7 +1,5 @@
 package com.ferbo.mail.beans;
 
-import java.util.Arrays;
-
 public class Adjunto {
 	public static final String TP_ARCHIVO_PDF = "application/pdf";
 	public static final String TP_ARCHIVO_XML = "application/xml";
@@ -40,6 +38,6 @@ public class Adjunto {
     @Override
     public String toString() {
         return "{\"nombreArchivo\":\"" + nombreArchivo + "\", \"tipoArchivo\":\"" + tipoArchivo + "\", \"contenido\":\""
-                + Arrays.toString(contenido) + "\"}";
+                + (contenido == null ? 0 : contenido.length) + " bytes.\"}";
     }
 }

@@ -1,9 +1,8 @@
 package com.ferbo.mail.beans;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
-import javax.annotation.Generated;
-import java.util.Collections;
 
 public class Mensaje {
 	private Integer id = null;
@@ -14,7 +13,6 @@ public class Mensaje {
 	private String body;
 	private List<Adjunto> attachments;
 
-	@Generated("SparkTools")
 	private Mensaje(Builder builder) {
 		this.id = builder.id;
 		this.toList = builder.toList;

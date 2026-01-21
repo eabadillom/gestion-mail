@@ -3,7 +3,7 @@
 	<groupId>com.ferbo</groupId>
 	<artifactId>gestion-mail</artifactId>
 	<version>0.0.3-SNAPSHOT</version>
-	<name>Mail</name>
+	<name>Gestion mail</name>
 	<description>Cliente de correo</description>
 	<packaging>jar</packaging>
 	<properties>
@@ -16,7 +16,8 @@
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
-			<version>2.19.0</version>
+			<version>2.20.0</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.sun.mail</groupId>

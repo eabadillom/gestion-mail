@@ -1,9 +1,15 @@
-#Gestion Mail
+# Gestion Mail
 
-Wrapper de javax.mail. Biblioteca para envío de correo.
+Wrapper de `javax.mail`. Biblioteca para envío de correo.
 
-**Versión 0.0.3**
-  
-* Actualización de versión log4j2
+## Tipos MIME soportados
 
-* Se agrega tratamiento de errores en procesamiento masivo de envío de correos.
+| Formato | Extensión      | Content-Type                                                        |
+|---------|----------------|---------------------------------------------------------------------|
+| JPEG    | `.jpg` `.jpeg` | `image/jpeg`                                                        |
+| PDF     | `.pdf`         | `application/pdf`                                                   |
+| PNG     | `.png`         | `image/png`                                                         |
+| XML     | `.xml`         | `application/xml`                                                   |
+| XLS     | `.xls`         | `application/vnd.ms-excel`                                          |
+| XLSX    | `.xlsx`        | `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet` |
+| ZIP     | `.zip`         | `application/zip`                                                   |

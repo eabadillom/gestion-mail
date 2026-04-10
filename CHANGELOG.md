@@ -9,7 +9,8 @@ Este proyecto sigue versionado semántico (SemVer) y el formato de [Keep a Chang
 ## [0.0.4] - 2026-04-10
 
 ### Added
-* Se agrega tipos MIME para archivos de imagen `JPEG` y `PNG`.
+* Se agrega tipos MIME para archivos de imagen `Binary`, `JPEG` y `PNG`.
+* Se agrega atributo `tamanio` en la clase `Adjunto`.
 
 ## [0.0.3] - 2026-01-21
 

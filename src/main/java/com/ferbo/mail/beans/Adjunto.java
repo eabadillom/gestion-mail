@@ -1,18 +1,19 @@
 package com.ferbo.mail.beans;
 
 public class Adjunto {
-	public static final String TP_ARCHIVO_JPEG = "image/jpeg";
-	public static final String TP_ARCHIVO_PDF  = "application/pdf";
-	public static final String TP_ARCHIVO_PNG  = "image/png";
-	public static final String TP_ARCHIVO_XML  = "application/xml";
-	public static final String TP_ARCHIVO_XLS  = "application/vnd.ms-excel";
-	public static final String TP_ARCHIVO_XLSX = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-	public static final String TP_ARCHIVO_ZIP  = "application/zip";
+	public static final String TP_ARCHIVO_JPEG     = "image/jpeg";
+	public static final String TP_ARCHIVO_PDF      = "application/pdf";
+	public static final String TP_ARCHIVO_PNG      = "image/png";
+	public static final String TP_ARCHIVO_XML      = "application/xml";
+	public static final String TP_ARCHIVO_GENERICO = "application/octet-stream";
+	public static final String TP_ARCHIVO_XLS      = "application/vnd.ms-excel";
+	public static final String TP_ARCHIVO_XLSX     = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+	public static final String TP_ARCHIVO_ZIP      = "application/zip";
 	
-	String nombreArchivo = null;
-	String tipoArchivo = null;
-	byte[] contenido = null;
-	
+	private String nombreArchivo = null;
+	private String tipoArchivo = null;
+	private byte[] contenido = null;
+	private Integer tamanio = null;
 	
 	
 	public Adjunto(String nombreArchivo, String tipoArchivo, byte[] contenido) {
@@ -20,6 +21,11 @@ public class Adjunto {
 		this.nombreArchivo = nombreArchivo;
 		this.tipoArchivo = tipoArchivo;
 		this.contenido = contenido;
+		
+		if(this.contenido == null || this.contenido.length == 0)
+			this.tamanio = 0;
+		else
+			this.tamanio = this.contenido.length; 
 	}
 	public String getNombreArchivo() {
 		return nombreArchivo;
@@ -44,4 +50,10 @@ public class Adjunto {
         return "{\"nombreArchivo\":\"" + nombreArchivo + "\", \"tipoArchivo\":\"" + tipoArchivo + "\", \"contenido\":\""
                 + (contenido == null ? 0 : contenido.length) + " bytes.\"}";
     }
+	public Integer getTamanio() {
+		return tamanio;
+	}
+	public void setTamanio(Integer tamanio) {
+		this.tamanio = tamanio;
+	}
 }

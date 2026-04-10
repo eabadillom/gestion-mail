@@ -13,3 +13,4 @@ Wrapper de `javax.mail`. Biblioteca para envío de correo.
 | XLS     | `.xls`         | `application/vnd.ms-excel`                                          |
 | XLSX    | `.xlsx`        | `application/vnd.openxmlformats-officedocument.spreadsheetml.sheet` |
 | ZIP     | `.zip`         | `application/zip`                                                   |
+| Binary  | `.*`           | `application/octet-stream`                                          |

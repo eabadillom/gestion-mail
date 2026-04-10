@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.ferbo</groupId>
 	<artifactId>gestion-mail</artifactId>
-	<version>0.0.3-RELEASE</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>Gestion mail</name>
 	<description>Cliente de correo</description>
 	<packaging>jar</packaging>
@@ -12,7 +12,6 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>

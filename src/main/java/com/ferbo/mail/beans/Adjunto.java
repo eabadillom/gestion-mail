@@ -1,11 +1,14 @@
 package com.ferbo.mail.beans;
 
 public class Adjunto {
+	public static final String TP_ARCHIVO_JPEG = "image/jpeg";
 	public static final String TP_ARCHIVO_PDF  = "application/pdf";
+	public static final String TP_ARCHIVO_PNG  = "image/png";
 	public static final String TP_ARCHIVO_XML  = "application/xml";
 	public static final String TP_ARCHIVO_XLS  = "application/vnd.ms-excel";
 	public static final String TP_ARCHIVO_XLSX = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
 	public static final String TP_ARCHIVO_ZIP  = "application/zip";
+	
 	String nombreArchivo = null;
 	String tipoArchivo = null;
 	byte[] contenido = null;

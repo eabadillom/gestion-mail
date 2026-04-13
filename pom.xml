@@ -6,6 +6,7 @@
 	<name>Gestion mail</name>
 	<description>Cliente de correo</description>
 	<packaging>jar</packaging>
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>

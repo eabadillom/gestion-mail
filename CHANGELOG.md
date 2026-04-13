@@ -5,12 +5,18 @@ Todos los cambios importantes en este proyecto serán documentados en este archi
 Este proyecto sigue versionado semántico (SemVer) y el formato de [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/).
 
 ---
+### Added
+
+## [0.0.5] - 2026-04-10
+
+### Added
+* Se agrega tipos MIME para archivos `Binary`.
+* Se agrega atributo `tamanio` en la clase `Adjunto`.
 
 ## [0.0.4] - 2026-04-10
 
 ### Added
-* Se agrega tipos MIME para archivos de imagen `Binary`, `JPEG` y `PNG`.
-* Se agrega atributo `tamanio` en la clase `Adjunto`.
+* Se agrega tipos MIME para archivos de imagen `JPEG` y `PNG`.
 
 ## [0.0.3] - 2026-01-21
 
